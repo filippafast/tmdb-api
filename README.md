@@ -12,8 +12,7 @@ Det finns även en Upcoming Movies-sida.
 
 
 ## Starta programmet med kommandot:
-#### cd course-submission
-#### cd tmdb-api
+
 ### `npm start`
 
 
