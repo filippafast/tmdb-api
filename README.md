@@ -12,7 +12,7 @@ Det finns även en Upcoming Movies-sida.
 
 
 ## Starta programmet med kommandot:
-
+### npm install
 ### `npm start`
 
 
