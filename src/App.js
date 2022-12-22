@@ -1,24 +1,34 @@
 
-import './App.css';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Header from './components/header/Header';
-import Home from './pages/home/home'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header } from "./components/header/Navbar";
+import Movie from "./components/moviedetail/MovieDetails";
+import { Watchlist } from "./components/Watchlist";
+import { Watched } from "./components/Watched"
+import { Search } from "./components/Search";
+import "./App.css";
+import { GlobalProvider } from "./context/GlobalState";
+import  Home from "./components/header/TopRatedMovies";
+import UpcomingMovies from "./components/header/UpcomingMovies";
 
-function App () {
+export default function App () {
   return (
-    <div className='App'>  
+      <GlobalProvider>
       <Router>
-        <Header />
+     <Header/>
         <Routes>
-        <Route index element={<Home/>}></Route>
-                <Route path="movie/:id" element={<h1>Movie detail page</h1>}></Route>
-                <Route path="movies/:type" element={<h1>Movie list page</h1>}></Route>
-                <Route path="/*" element={<h1>Error Page</h1>}></Route>
+                <Route index path="/" element={<Home/>}/>
+                <Route path="movie/:id" element={<Movie/>}/>
+                <Route path="/upcomingmovies" element={<UpcomingMovies/>}/>
+                <Route path="/search" element={<Search/>}/>
+                <Route path="/watchlist" element={<Watchlist/>}/>
+                <Route path="/watched" element={<Watched/>}/>
+                <Route path="/*" element={<h1>Error page</h1>}></Route>
         </Routes>
       </Router>
-        </div>
-
+        </GlobalProvider>
+  
   );
 }
-export default App; 
+
 

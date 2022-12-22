@@ -1,0 +1,64 @@
+.UpcomingImage .UpcomingMovies{
+    height: 800px;
+
+}
+
+.UpcomingImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+.UpcomingOverlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .5s;
+}   
+
+
+.UpcomingOverlay:hover {
+    opacity: 1;
+}
+
+.UpcomingTitle{
+    
+        font-size: 4vw;
+        margin-bottom: 0.4rem;
+        text-align: left;
+        font-family: 'Fjalla One' , sans-serif;
+        position: relative;
+    
+}
+
+.UpcomingRuntime {
+        font-size: 2rem;
+
+    
+}
+.UpcomingImageRating{
+    margin-left: 1rem;
+    font-size: 2vw;
+}
+
+
+.UpcomingDescription{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 1vw;
+    margin-right: auto;
+    overflow: auto;
+    margin-top: 20px;
+    display: flex;
+    text-align: left;
+    height: 150px;
+    width: 60%;
+}
+

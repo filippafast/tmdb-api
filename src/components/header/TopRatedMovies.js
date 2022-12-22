@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
-import "./home.css";
+import "./TopRatedMovies.css";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
+import MovieList from "../movielist/MovieList";
 
-
-
-
+//Top Rated Movies carousel
 const Home = () => {
-    const [ popularMovies, setPopularMovies ] = useState([])
+    const [topRatedMovies, setTopRatedMovies ] = useState([])
 
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=9953b7ebb0231db8dbdf84cb487b605a&language=en-US")
+        fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=9953b7ebb0231db8dbdf84cb487b605a&adult=false&language=en-US")
         .then(res => res.json())
-        .then(data => setPopularMovies(data.results))
+        .then(data => setTopRatedMovies(data.results))
     }, [])
 
   return (
     <>
-       <div className="poster">
+       <div className="topRatedposters">
           <Carousel
                 showThumbs={false}
                 autoPlay={true}
@@ -27,31 +26,31 @@ const Home = () => {
                 showStatus={false}
             >
            {
-                        popularMovies.map(movie => (
+                        topRatedMovies.map((movie, index) => (
                             <Link style={{textDecoration:"none",color:"white"}} to={`/movie/${movie.id}`} >
-                                <div className="posterImage">
-                                    <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} alt="posterMovie" />
+                                <div className="topRatedImage">
+                                    <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} alt="posterMovie" className="TopRatedMovies" />
                                 </div>
-                                <div className="posterImage__overlay">
-                                    <div className="posterImage__title">{movie ? movie.original_title: ""}</div>
-                                    <div className="posterImage__runtime">
-                                        
-                                        <span className="posterImage__rating">
+                                <div className="topRatedOverlay">
+                                    <div className="topRatedTitle">{movie ? movie.original_title: ""}</div>
+                                    <div className="topRatedRuntime">
+                                        <span className="topRatedImageRating">
                                             {movie ? movie.vote_average :""}
                                             <i className="fas fa-star" id="star" />{" "}
                                         </span>
                                     </div>
-                                    
+                                    <div className="topRatedDescription">{movie ? movie.overview : ""}</div>
                                 </div>
                             </Link>
                         ))
                     }
                 </Carousel>
-              
+                <MovieList/>
             </div>
         </>
     )
 }
+
 
 
 export default Home;

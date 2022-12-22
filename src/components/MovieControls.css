@@ -1,0 +1,94 @@
+
+
+.RemoveBtn {
+   font-size: 12px;
+   margin-left: -20px;
+}
+
+.ctrl-btn-remove {
+    margin-left: -20px;
+}
+
+.ctrl-btn-watch:hover, .ctrl-btn-add:hover {
+    color:#5bbdb8b2;
+}
+
+.ctrl-btn-watch, .ctrl-btn-add {
+    margin-left: -110px;
+    
+}
+
+.boxes::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.WatchBtn {
+    font-size: 12px;
+    margin-left: -110px;
+}
+
+.ctrl-btn {
+    color: #fefefe;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin: 0;
+    width: 50%;
+  }
+
+  .ctrl-btn:hover {
+    color: #b6b6b6;
+    cursor: pointer;
+  }
+
+
+.MovieCard {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 0;
+    display: block;
+  }
+  
+  .MovieCard img {
+    width: 100%;
+    display: block;
+  }
+  
+  .MovieCard .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .MovieCard:hover .overlay {
+    border: 5px solid #5bbdb8b2;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8683182745754552) 0%, rgba(149,154,154,0) 37%);
+  }
+  
+  .MovieCard .inner-card-controls {
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+    left: 60%;
+    transform: translateX(-20%);
+    border-radius: 5px;
+    padding: 3px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .MovieCard:hover .inner-card-controls {
+    opacity: 1;
+  }
+  
+

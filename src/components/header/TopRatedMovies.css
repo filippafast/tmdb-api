@@ -1,14 +1,17 @@
-.posterImage{
-    height: 500px;
+/*Top Rated Movies Carousel*/ 
+
+.topRatedImage .topRatedMovies{
+    height: 700px;
+
 }
 
-.posterImage > img {
+.TopRatedImage > img {
     margin: auto;
     display: block;
     width: 100%;
 }
 
-.posterImage__overlay {
+.topRatedOverlay {
     position: absolute;
     padding: 5rem;
     bottom: 0px;
@@ -23,29 +26,38 @@
     transition: opacity .5s;
 }   
 
-.posterImage__overlay:hover {
+.topRatedOverlay:hover {
     opacity: 1;
 }
 
-.posterImage__title {
-
-    font-size: 3.5rem;
+.topRatedTitle {
+    font-size: 4vw;
     margin-bottom: 0.4rem;
     text-align: left;
     font-family: 'Fjalla One' , sans-serif;
+    position: relative;
 }
 
-.posterImage__runtime {
-    font-size: 25px;
-}
 
-.posterImage__rating {
+.topRatedImageRating {
     margin-left: 1rem;
-    
+    font-size: 3vw;
+}
+.topRatedRuntime {
+    font-size: 2rem;
+  
+}
+.topRatedDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 1vw;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
 }
 
 #star {
-color:rgb(238, 203, 27);
-margin: 0 10px;
+    color:rgb(238, 203, 27);
+    margin: 0 10px;
 }
 
