@@ -1,4 +1,4 @@
-# Projektet är gjort av Filippa Fast
+# Projekt av Filippa Fast
 ## Tmdb-API
 ### Ett projekt byggt med React 
 
