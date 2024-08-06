@@ -1,7 +1,7 @@
 ## Projekt av Filippa Fast 
 #### Webbutveckling inom .NET - JavaScript Backend
 ### Tmdb-API
-### Ett projekt byggt med React   [![My Skills](https://skillicons.dev/icons?i=react,javascript)](https://skillicons.dev)
+### Ett projekt byggt med React 
 
 
 :movie_camera: Projektet är gjort i React där API:t är taget ifrån https://www.themoviedb.org/ :movie_camera:
@@ -12,7 +12,11 @@ Nedanför karusellen syns kort-format på populära filmer där Skeleton Theme a
 Det finns en infosida om varje film. 
 I Search-funktionen kan man söka efter en film och därefter kan man lägga till filmen i watchlist eller watched-listan. Du kan radera filmen i båda listorna. 
 Det finns även en Upcoming Movies-sida. :film_strip:
-
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,javascript" />
+  </a>
+</p>
 
 ## Starta programmet med kommandot:
 ### npm install
