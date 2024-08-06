@@ -1,9 +1,10 @@
-# Projekt av Filippa Fast
+# Projekt av Filippa Fast 
+# Webbutveckling inom .NET - JavaScript Backend
 ## Tmdb-API
-### Ett projekt byggt med React [![My Skills](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
+### Ett projekt byggt med React [![My Skills](https://skillicons.dev/icons?i=react,javascript)](https://skillicons.dev)
 
 
-:movie_camera: Jag har gjort ett projekt i React där API är taget ifrån https://www.themoviedb.org/ :movie_camera:
+:movie_camera: Jag har gjort ett projekt i React där API:t är taget ifrån https://www.themoviedb.org/ :movie_camera:
 
 
 I projektet syns förstasidan med en React-karusell som visar Top Rated Movies. 
