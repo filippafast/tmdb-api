@@ -1,6 +1,7 @@
 # Projekt av Filippa Fast
 ## Tmdb-API
-### Ett projekt byggt med React 
+### Ett projekt byggt med React [![My Skills](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
+
 
 :movie_camera: Jag har gjort ett projekt i React där API är taget ifrån https://www.themoviedb.org/ :movie_camera:
 
